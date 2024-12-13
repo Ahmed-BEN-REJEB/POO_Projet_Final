@@ -54,10 +54,7 @@ public class Espace {
 
     //Définition d'une méthode vérifiant si une personne a effectué une vaccination par un vaccin spécifique
     public boolean verifExistenceVaccin(Vaccin vaccin, Vaccination vaccination){
-        if(vaccination.getVaccin().equals(vaccin)){
-            return true;
-        } 
-        return false;
+        return vaccination.getVaccin().equals(vaccin);
     }
 
     //Définition d'une méthode permettant d'accéder à une vaccination d'une personne donnée, en faisant recours aux méthodes préalablement définies
